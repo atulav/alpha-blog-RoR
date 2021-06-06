@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <% flash.each do |it,it1| %>
+        <h2 align="center"><%= it1 %></h2>
+    <% end %>
     <%= yield %>
   </body>
 </html>
